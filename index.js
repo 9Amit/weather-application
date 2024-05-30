@@ -8,7 +8,7 @@ const weatherIcon = document.querySelector(".wheather-icon");
 async function checkWeather(city) {
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     const data = await response.json();
-    console.log(data);
+    
 
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
@@ -29,6 +29,7 @@ async function checkWeather(city) {
     }else if(data.weather[0].main=="Snow"){
         weatherIcon.src="./images/snow.png";
     }
+    document.querySelector(".wheather").style.display="block";
     
 }
 
