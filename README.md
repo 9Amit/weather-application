@@ -1,4 +1,5 @@
 🌦️ Weather App
+
 A simple and visually appealing Weather App built using HTML, CSS, and JavaScript. This application allows users to search for the current weather in any city across the globe, displaying temperature, humidity, wind speed, and dynamic weather icons.
 
 
